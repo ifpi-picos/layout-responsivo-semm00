@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Documentos/htmllearn"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Petbook - prof"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Petbook - prof"
+	}
+}
