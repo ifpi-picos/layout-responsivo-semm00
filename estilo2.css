@@ -21,6 +21,7 @@ main{
     /*background-color: gray;*/
     height: calc(100vh - 120px);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px 0        /** o 0 é a medida para os lados**/
 }
@@ -46,6 +47,22 @@ footer{
 }
 
 .titulo {
+    display: flex;
 justify-content: center;
 align-items: center;
+}
+
+@media(max-width: 768px){
+    main {
+        height: auto;
+    }
+    main div {
+        width: 45%
+    }
+}
+
+@media(max-width: 576px){
+    main div {
+        width: 100%
+    }
 }
