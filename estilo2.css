@@ -2,17 +2,34 @@
     box-sizing: border-box;
 }
 
+.globo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 75px;
+    height: 50px;
+    margin-top: 10px;
+}
+
 body{
     display:flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
     margin:0;
-    background-color: #ffffff;
+    background-color: #cff8f2;
 }
-header,footer{
+header{
+    height: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
     height: 60px;
 }
+
 header{
     background-color: #51b0be;
 }
@@ -23,20 +40,13 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 10px;
-    padding: 10px 0        /** o 0 é a medida para os lados**/
+    padding: 10px 0px      /** o 0 é a medida para os lados**/
 }
 
 main div{
-    width: 30%;
-    background-color: #8ddcdb;
+    width: 32.5%;
+    background-color: #bbf0f0;
     height: 100%;
-}
-main div h2{
-    color:#000;
-    -webkit-text-stroke: color;
-    margin: 10px;
-
 }
 
 footer{ 
@@ -47,11 +57,68 @@ footer{
     gap:1rem
 }
 
-.titulo {
-    display: flex;
-justify-content: center;
-align-items: center;
+.cc {
+    color: #0f0f58;
 }
+
+.manchete{
+    font-size: 25px;
+    padding: 4px;
+    color:#145442;
+    -webkit-text-stroke: color;
+    text-align: center;
+    word-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.textc{
+    font-size: 15px;
+    text-align: justify;
+    font-style: oblique;
+    padding: 7px;
+    padding-top: 40px;
+    border-top: double 1px #145442;
+    color: #145442;;
+}
+
+.textc2 {
+    font-size: 15px;
+    text-align: justify;
+    font-style: italic;
+    padding: 7px;
+    padding-top: 10px; 
+    color: #145442;
+}
+
+.textc3 {
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    text-align: center;
+    padding-top: 5px;
+    color: #1b7646;
+}
+.titulo {
+display: flex;
+justify-content: center;
+text-align: center;
+font-style: italic;
+color: #0f0f58;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imagens{
+    bottom: 80px;
+    position: absolute;
+    width: 490px;
+    padding: 10px;
+}
+
+.imagens{
+    max-width: 32.5%;
+    height: auto;
+}
+
 
 @media(max-width: 768px){
     main {
@@ -60,11 +127,18 @@ align-items: center;
     main div {
         height: 100vh;
         width: 45%
-    }
+    } 
+    img {
+         max-width: 45%;
+    } 
 }
 
 @media(max-width: 576px){
-    main div {
+    main div{
         width: 98%
+    }
+
+    img{
+        max-width: 98%;
     }
 }
